@@ -1,0 +1,22 @@
+html {
+	background-color: #202020;
+	color: #aaaaaa;
+	font-family: monospace;
+	font-size: 1em;
+}
+
+textarea {
+	color: #ffffff;
+	background: none;
+	border: none;
+	font-size: 12px !important;
+}
+
+div {
+	margin-bottom: 20px;
+	margin-left: 20px;
+}
+
+#contrast {
+	width: 50px;
+}

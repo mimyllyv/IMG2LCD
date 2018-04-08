@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script src="js/jquery-3.2.1.min.js"></script>
+		<script src="js/jquery-ui.min.js"></script>
+		<link href="jquery-ui/jquery-ui.min.css" rel="stylesheet">
+		<link href="style.css" type="text/css" rel="stylesheet">
+		<script src="js/script.js"></script>
+	</head>
+	<body>
+		<h1>IMG2LCDHEX Converter</h1>
+		<div>
+			<p>
+			Image will be converted to 1bpp raw hex data, which can be used with AVR connected OLED displays.
+			<br/>Tested with:<br/>
+			<li>SSD1306 OLED</li>
+			<li>PCD8544 LCD</li>
+			</p>
+			<fieldset>
+				<legend>Actions</legend>
+				<span id="contrastSpan">
+				Contrast:<input id="contrast" name="value"/>
+				</span>
+				<span id="invertedSpan">
+					<label for="chkInv">Inverted</label>
+					<input type="checkbox" name="chkInvName" id="chkInv">
+				</span>
+				<input type="file" id="file_input"/>
+				<button id="refresh" onClick="window.location.reload()">Choose new file</button>
+			</fieldset>
+		</div>
+		<div>
+			Image preview <span id="help">(Black is background):</span>
+			<p><canvas id="canvas"></canvas></p>
+		</div>
+		<div>
+			Hex data output:<br/>
+			<span class="ui-spinner ui-corner-all ui-widget ui-widget-content"><textarea id="output" rows="10" cols="120"></textarea></span>
+		</div>
+	</body>
+</html>
